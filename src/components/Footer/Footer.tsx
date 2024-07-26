@@ -18,10 +18,13 @@ const Footer: React.FC = () => {
     };
   }, []);
 
+  // Definir a constante currentYear
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={`footer ${isVisible ? 'visible' : ''}`}>
       <div className="container">
-        <p>&copy; 2024 - Seu Nome. Todos os direitos reservados.</p>
+        <p>&copy; {currentYear} <a className="A Financeira">Copyright | </a>A Financeira <a href="https://thiagonet.com" className="developer"></a></p>
       </div>
     </footer>
   );
