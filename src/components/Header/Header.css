@@ -16,6 +16,11 @@ header .top-nav {
   align-items: center;
 }
 
+header .top-nav .left {
+  display: flex;
+  align-items: center;
+}
+
 header .top-nav .left,
 header .top-nav .center,
 header .top-nav .right {
@@ -57,6 +62,17 @@ header .top-nav .right ul li a {
   cursor: pointer;
   color: #fff;
   margin-right: 20px;
+}
+
+.logo {
+  width: 40px; /* Defina o tamanho padrão desejado */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+.logo-text {
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
