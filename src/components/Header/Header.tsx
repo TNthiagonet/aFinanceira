@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         </div>
         <div className="right">
           <ul className={`menu ${mobileMenuOpen ? 'open' : ''}`}>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
             <li><a href="#contact">Contato</a></li>
