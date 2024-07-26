@@ -8,18 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, 
-    #210032,
-    #310043,
-    #420054,
-    #520065,
-    #620076,
-    #620076,
-    #520065,
-    #420054,
-    #310043,
-    #210032
-  );
+  background-image: linear-gradient(to bottom,
+  rgb(244, 244, 247), 
+  rgb(255, 255, 255), 
+  rgb(244, 244, 247)
+);
   z-index: 9999; /* Certifique-se de que está acima de outros elementos */
 }
 
