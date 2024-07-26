@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import './Header.css';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import Lottie from 'lottie-react';
 import animationData from '../../Animations/af.json'; // Ajuste o caminho conforme necessário
+import './Header.css';
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -18,7 +22,8 @@ const Header: React.FC = () => {
           {/* Substitua a imagem estática pela animação Lottie */}
           <Lottie
             animationData={animationData}
-            style={{ width: '40px', height: '40px' }} // Ajuste o tamanho conforme necessário
+            style={{ width: '40px', height: '40px' , 
+            filter: 'brightness(1.1) contrast(1.1)' }}
           />
           <span className="logo-text">A Financeira</span>
         </div>
@@ -37,7 +42,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </nav>
-      <MobileMenu isOpen={mobileMenuOpen} />
+      <MobileMenu isOpen={mobileMenuOpen} onClose={closeMenu} />
     </header>
   );
 };

@@ -8,6 +8,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 2;
+  font-family: 'Montserrat', sans-serif; /* Aplicando a fonte Montserrat ao header */
 }
 
 header .top-nav {
@@ -129,3 +130,4 @@ header .top-nav .right ul li a {
     display: block; /* Mostra o ícone do menu hambúrguer */
   }
 }
+

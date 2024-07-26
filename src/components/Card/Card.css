@@ -1,12 +1,25 @@
 /* Arquivo: src/components/Card/Card.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 .card {
-  border-radius: 0.5rem;
+  border-radius: 0.52rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.521);
-  width: 300px; /* Ajuste conforme necessário */
-  height: 80%; /* Reduz a altura do card em 20% */
+  box-shadow: 0 0 3px #e2cc06; /* Sombra suave */
+  width: 250px; /* Ajuste conforme necessário */
+  height: 100%; /* Reduz a altura do card em 20% */
 }
+
+.card:hover {
+  transform: scale(1.01); /* Aplica um zoom de 10% (escala 1.1) */
+  box-shadow: 0 0 20px rgb(255, 242, 53);
+}
+
+ .card h2 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+ }
 
 .card-image {
   width: 100%;
@@ -15,6 +28,7 @@
 }
 
 .card-content {
+  background-color:#f3b4ff1f;
   padding: 1rem;
   height: 40%; /* Ajuste a altura do conteúdo para manter a proporção do card */
 }
@@ -27,20 +41,29 @@
 
 .card-description {
   font-size: 1rem;
-  color: #666;
+  color: #525151;
   margin-bottom: 1rem;
 }
 
 .card-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #3B82F6;
-  color: white;
-  border-radius: 0.25rem;
+  border: 2px solid #aca907; /* Adiciona uma borda de 2px */
+  background: radial-gradient(circle at center, 
+    #f1da04, 
+    #e4d503, 
+    #ceba02, 
+    #af9502, 
+    #887401
+  );
+  color: #333333;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .card-button:hover {
-  background-color: #2563EB;
+  transform: scale(1.05); /* Efeito de escala para criar o brilho */
+  filter: brightness(1.1) contrast(1.1); /* Ajusta brilho e contraste */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }

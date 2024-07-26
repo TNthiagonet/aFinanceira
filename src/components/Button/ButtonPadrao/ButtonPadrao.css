@@ -1,0 +1,28 @@
+/* ButtonPadrao.css */
+
+.btn-padrao {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: 2px solid #aca907; /* Adiciona uma borda de 2px */
+  background: radial-gradient(circle at center, 
+    #f1da04, 
+    #e4d503, 
+    #ceba02, 
+    #af9502, 
+    #887401
+  );
+  color: #3d3d3d;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, filter 0.2s ease; /* Transições para efeito hover */
+  border-radius: 10px; /* Borda arredondada */
+  overflow: hidden; /* Oculta o overflow para aplicar o efeito de brilho e contraste */
+  background-size: 200% 200%; /* Ajusta o tamanho do gradiente para que ele cubra o botão */
+  background-position: center; /* Garante que o gradiente esteja centralizado */
+}
+
+.btn-padrao:hover {
+  transform: scale(1.05); /* Efeito de escala para criar o brilho */
+  filter: brightness(1.1) contrast(1.1); /* Ajusta brilho e contraste */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  font-weight: bold;
+}

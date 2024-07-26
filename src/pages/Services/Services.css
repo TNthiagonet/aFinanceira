@@ -1,19 +1,61 @@
+/* Services.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
+/* Estilo principal da seção "Serviços" */
+#services {
+  padding: 10px 20px; /* Define o preenchimento da seção */
+}
+
+/* Estilo do cabeçalho da seção "Serviços" */
+.services-header {
+  text-align: center; /* Alinha o texto ao centro */
+
+}
+
+.services-header h1 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 100px;
+  font-size: 3rem; /* Aumenta o tamanho da fonte */
+  color: #333333;
+  text-shadow: -2px 2px 2px rgb(185, 185, 154); 
+}
+
+.services-header p {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  margin-bottom: 20px; /* Define a margem inferior */
+  color: #333333;
+  text-shadow: -2px 2px 2px rgb(185, 185, 154); 
+}
+
+.services-header-p {
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  margin-bottom: 20px; /* Define a margem inferior */
+  color: #333333;
+  text-shadow: -2px 2px 2px rgb(185, 185, 154); 
+}
+
+/* Estilo para o contêiner da animação */
+.services-animation-container {
+  width: 100%; /* Define a largura máxima */
+  max-width: 20vw; /* Define a largura máxima */
+  margin: 0 auto 50px; /* Define a margem inferior */
+
+}
+
+/* Estilo para o contêiner dos cards */
+.services-card-container {
+  display: flex; /* Define o layout flexível */
+  flex-wrap: wrap; /* Permite que os itens flexíveis ocupem múltiplas linhas */
   justify-content: center; /* Centraliza os cards horizontalmente */
   gap: 2rem; /* Espaçamento entre os cards */
+}
 
-  /* Responsividade para tablets */
-  @media (min-width: 768px) {
-    gap: 2rem; /* Espaçamento entre os cards */
-    justify-content: space-between; /* Distribui os cards igualmente */
-  }
-
-  /* Responsividade para desktops */
-  @media (min-width: 1024px) {
-    justify-content: center; /* Centraliza os cards */
-    gap: 2rem; /* Reduz o espaçamento entre os cards */
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .services-animation-container {
+    max-width: 70%; /* Define a largura máxima para 50% */
   }
 }
