@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <header>
       <nav className="top-nav">
         <div className="left">
-          <img src="../../../public/apple-icon.png" alt="Logo" className="logo" />
+          <img src="../../../apple-icon.png" alt="Logo" className="logo" />
           <span className="logo-text">A Financeira</span>
         </div>
         <div className="center">
