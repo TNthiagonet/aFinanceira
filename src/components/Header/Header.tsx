@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Header.css';
 import MobileMenu from '../MobileMenu/MobileMenu';
+import Lottie from 'lottie-react';
+import animationData from '../../Animations/af.json'; // Ajuste o caminho conforme necessário
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +15,11 @@ const Header: React.FC = () => {
     <header>
       <nav className="top-nav">
         <div className="left">
-          <img src="../../../apple-icon.png" alt="Logo" className="logo" />
+          {/* Substitua a imagem estática pela animação Lottie */}
+          <Lottie
+            animationData={animationData}
+            style={{ width: '40px', height: '40px' }} // Ajuste o tamanho conforme necessário
+          />
           <span className="logo-text">A Financeira</span>
         </div>
         <div className="center">

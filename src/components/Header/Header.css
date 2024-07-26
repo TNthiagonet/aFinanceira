@@ -19,12 +19,7 @@ header .top-nav {
 header .top-nav .left {
   display: flex;
   align-items: center;
-}
-
-header .top-nav .left,
-header .top-nav .center,
-header .top-nav .right {
-  flex: 1;
+  flex: 1; /* Garante que o conteúdo à esquerda ocupe o espaço disponível */
 }
 
 header .top-nav .center {
@@ -36,6 +31,8 @@ header .top-nav .right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex: 1; /* Garante que o conteúdo à direita ocupe o espaço disponível */
+  margin-right: 2rem; /* Adiciona margem à direita do menu */
 }
 
 header .top-nav .right ul {
@@ -43,44 +40,92 @@ header .top-nav .right ul {
   padding: 0;
   margin: 0;
   display: flex;
-  margin-right: 15%;
 }
 
 header .top-nav .right ul li {
-  margin-left: 15px;
+  margin-left: 1rem; /* Usa unidade relativa */
 }
 
 header .top-nav .right ul li a {
   color: #fff;
+  text-shadow: 
+    0.1px 0.1px 0 rgb(240, 204, 3), 
+    0.2px 0.2px 0 #b8860b, 
+    0.3px 0.3px 0 #8a6507, 
+    0.4px 0.4px 0 #8d5d03;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem; /* Usa unidade relativa */
 }
 
 .hamburger-menu {
   display: none;
-  font-size: 30px;
+  font-size: 2rem; /* Usa unidade relativa */
   cursor: pointer;
   color: #fff;
-  margin-right: 20px;
+  text-shadow: 
+    0.1px 0.1px 0 rgb(240, 204, 3), 
+    0.2px 0.2px 0 #b8860b, 
+    0.3px 0.3px 0 #8a6507, 
+    0.4px 0.4px 0 #8d5d03;
+  margin-left: 1.25rem; /* Margem à esquerda do ícone do menu hambúrguer */
+  margin-right: 2rem; /* Margem à direita aumentada do ícone do menu hambúrguer */
 }
 
 .logo {
-  width: 40px; /* Defina o tamanho padrão desejado */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-right: 10px; /* Espaço entre a logo e o texto */
+  width: 2.5rem; /* Usa unidade relativa */
+  height: auto;
+  margin-right: 0.625rem; /* Usa unidade relativa */
 }
 
 .logo-text {
-  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 1.125rem; /* Usa unidade relativa */
   font-weight: bold;
+  color: #fff;
+  text-shadow: 
+    0.1px 0.1px 0 rgb(240, 204, 3), 
+    0.2px 0.2px 0 #b8860b;
 }
 
-@media (max-width: 768px) {
-  header .top-nav .right ul {
-    display: none;
+@media (max-width: 1024px) { /* Ajustes para tablets e dispositivos móveis */
+  header .top-nav {
+    flex-direction: row; /* Mantém os itens em linha */
+    justify-content: space-between; /* Espaça os itens igualmente */
+  }
+
+  header .top-nav .center {
+    display: none; /* Esconde a área central em dispositivos menores */
+  }
+
+  .logo {
+    width: 2rem; /* Ajusta o tamanho da logo para dispositivos móveis */
+  }
+
+  .logo-text {
+    font-size: 1rem; /* Ajusta o tamanho do texto para dispositivos móveis */
   }
 
   .hamburger-menu {
-    display: block;
+    display: block; /* Mostra o ícone do menu hambúrguer */
+  }
+
+  .top-nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) { /* Ajustes para smartphones */
+  header .top-nav {
+    flex-direction: row; /* Mantém os itens em linha */
+  }
+
+  header .top-nav .right ul {
+    display: none; /* Esconde o menu em dispositivos menores */
+  }
+
+  .hamburger-menu {
+    display: block; /* Mostra o ícone do menu hambúrguer */
   }
 }
