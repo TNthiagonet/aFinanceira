@@ -1,8 +1,8 @@
 /* Arquivo: src/components/Footer/Footer.css */
 
 .footer {
-  background-color: #020f58; /* Cor de fundo do rodapé */
-  color: #fff; /* Cor do texto */
+  background-color: #57580215; /* Cor de fundo do rodapé */
+  color: #272727; /* Cor do texto */
   text-align: center;
   padding: 10px 20px; /* Ajustado o padding */
   position: fixed;
@@ -21,7 +21,7 @@
 }
 
 .footer a {
-  color: #fff; /* Cor do link */
+  color: #272727; /* Cor do link */
   text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -38,5 +38,5 @@
 }
 
 .footer .developer:hover {
-  color: #ccc; /* Cor do link ao passar o mouse */
+  color: #272727; /* Cor do link ao passar o mouse */
 }

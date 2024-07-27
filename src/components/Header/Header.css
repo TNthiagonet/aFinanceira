@@ -1,8 +1,8 @@
 /* Header.css */
 
 header {
-  background-color: #020f58;
-  color: #fff;
+  background-color: #b9b79600;
+  color: #272727;
   padding: 10px 20px;
   width: 100%;
   position: fixed;
@@ -48,7 +48,7 @@ header .top-nav .right ul li {
 }
 
 header .top-nav .right ul li a {
-  color: #fff;
+  color: #272727;
   text-shadow: 
     0.1px 0.1px 0 rgb(240, 204, 3), 
     0.2px 0.2px 0 #b8860b, 
@@ -63,7 +63,7 @@ header .top-nav .right ul li a {
   display: none;
   font-size: 2rem; /* Usa unidade relativa */
   cursor: pointer;
-  color: #fff;
+  color: #272727;
   text-shadow: 
     0.1px 0.1px 0 rgb(240, 204, 3), 
     0.2px 0.2px 0 #b8860b, 
@@ -82,7 +82,7 @@ header .top-nav .right ul li a {
 .logo-text {
   font-size: 1.125rem; /* Usa unidade relativa */
   font-weight: bold;
-  color: #fff;
+  color: #272727;
   text-shadow: 
     0.1px 0.1px 0 rgb(240, 204, 3), 
     0.2px 0.2px 0 #b8860b;
