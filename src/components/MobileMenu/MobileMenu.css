@@ -2,7 +2,7 @@
 
 .mobile-menu {
   display: none;
-  background-color: #020f58;
+  background-color: #57580215;
   padding: 0px;
   position: fixed;
   top: 60px;
@@ -29,7 +29,14 @@
 }
 
 .mobile-menu ul li a {
-  color: #fff;
+  color: #272727;
+  text-shadow: 
+    0.1px 0.1px 0 rgb(240, 204, 3), 
+    0.2px 0.2px 0 #b8860b, 
+    0.3px 0.3px 0 #8a6507, 
+    0.4px 0.4px 0 #8d5d03;
   text-decoration: none;
   display: block;
+  font-size: 1.5em; /* Aumenta o tamanho do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
 }
