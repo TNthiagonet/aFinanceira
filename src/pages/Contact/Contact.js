@@ -39,7 +39,7 @@ const Contact = () => {
         React.createElement("div", { className: "contact-content" },
             React.createElement("div", { className: "contact-header" },
                 React.createElement("h1", null, "Contato"),
-                React.createElement("p", null, "Entre em contato por whatsapp, email, telefone, facebook, twitter ou instagram.")),
+                React.createElement("p", null, "")),
             React.createElement("div", { className: "contact-animations" },
                 React.createElement(Lottie, { animationData: animationData, loop: true, autoplay: true, style: { width: '70%', height: 'auto' } })),
             React.createElement("div", { className: "contact-icons" },

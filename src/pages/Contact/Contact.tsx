@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
       <div className="contact-content">
         <div className="contact-header">
           <h1>Contato</h1>
-          <p>Entre em contato por whatsapp, email, telefone, facebook, twitter ou instagram.</p>
+          <p></p>
         </div>
         <div className="contact-animations">
           <Lottie animationData={animationData} loop autoplay style={{ width: '70%', height: 'auto' }} />
