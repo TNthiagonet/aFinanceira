@@ -17,7 +17,7 @@ const ButtonWhatsapp = () => {
             setIsSecondAnimation(false);
         }, 2000);
         setTimeout(() => {
-            window.open('https://wa.me/5583981790771', '_blank');
+            window.open('https://wa.me/5511944668219', '_blank');
         }, 2000);
     };
     const containerClassName = isSecondAnimation ? 'button-whatsapp-container second-animation' : 'button-whatsapp-container';
