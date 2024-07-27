@@ -19,7 +19,7 @@ const Contact = () => {
     const twitterRef = useRef(null);
     const instagramRef = useRef(null);
     const handleEmailClick = () => {
-        window.location.href = 'mailto:thiagobrunomenezesdacosta@gmail.com';
+        window.location.href = 'mailto:contato@afinanceira.com.br';
     };
     const handleHoverSound = (sound, ref) => {
         if (ref.current) {
@@ -33,7 +33,7 @@ const Contact = () => {
         }
     };
     const handlePhoneClick = () => {
-        window.location.href = 'tel:83981790771';
+        window.location.href = 'tel:11944668219';
     };
     return (React.createElement("section", { id: "contact" },
         React.createElement("div", { className: "contact-content" },
@@ -43,15 +43,15 @@ const Contact = () => {
             React.createElement("div", { className: "contact-animations" },
                 React.createElement(Lottie, { animationData: animationData, loop: true, autoplay: true, style: { width: '70%', height: 'auto' } })),
             React.createElement("div", { className: "contact-icons" },
-                React.createElement("a", { href: "mailto:thiagobrunomenezesdacosta@gmail.com", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(emailHoverSound, emailRef), onClick: handleEmailClick, ref: emailRef },
+                React.createElement("a", { href: "mailto:contato@afinanceira.com.br", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(emailHoverSound, emailRef), onClick: handleEmailClick, ref: emailRef },
                     React.createElement("img", { src: EmailIcon, className: "contact-icon", alt: "Email" })),
-                React.createElement("a", { href: "tel:+83981790771", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(telefoneHoverSound, telefoneRef), onClick: handlePhoneClick, ref: telefoneRef },
+                React.createElement("a", { href: "tel:+11944668219", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(telefoneHoverSound, telefoneRef), onClick: handlePhoneClick, ref: telefoneRef },
                     React.createElement("img", { src: PhoneIcon, className: "contact-icon", alt: "Telefone" })),
                 React.createElement("a", { href: "https://www.facebook.com/", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(facebookHoverSound, facebookRef), ref: facebookRef },
                     React.createElement("img", { src: FacebookIcon, className: "contact-icon", alt: "Facebook" })),
                 React.createElement("a", { href: "https://twitter.com/", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(twitterHoverSound, twitterRef), ref: twitterRef },
                     React.createElement("img", { src: TwitterIcon, className: "contact-icon", alt: "Twitter" })),
-                React.createElement("a", { href: "https://www.instagram.com/thiagonet.com.br", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(instagramHoverSound, instagramRef), ref: instagramRef },
+                React.createElement("a", { href: "https://www.instagram.com/afinanceira.com.br", target: "_blank", rel: "noopener noreferrer", onMouseEnter: () => handleHoverSound(instagramHoverSound, instagramRef), ref: instagramRef },
                     React.createElement("img", { src: InstagramIcon, className: "contact-icon", alt: "Instagram" }))))));
 };
 export default Contact;

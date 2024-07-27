@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:83981790771';
+    window.location.href = 'tel:11944668219';
   };
 
   return (
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-icons">
           <a
-            href="mailto:thiagobrunomenezesdacosta@gmail.com"
+            href="mailto:contato@afinanceira.com.br"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(emailHoverSound, emailRef)}
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
             <img src={EmailIcon} className="contact-icon" alt="Email" />
           </a>
           <a
-            href="tel:+83981790771"
+            href="tel:+11944668219"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(telefoneHoverSound, telefoneRef)}
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
             <img src={TwitterIcon} className="contact-icon" alt="Twitter" />
           </a>
           <a
-            href="https://www.instagram.com/thiagonet.com.br"
+            href="https://www.instagram.com/afinanceira.com.br"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => handleHoverSound(instagramHoverSound, instagramRef)}
