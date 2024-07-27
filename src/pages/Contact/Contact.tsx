@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
   const instagramRef = useRef<HTMLAnchorElement>(null);
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:thiagobrunomenezesdacosta@gmail.com';
+    window.location.href = 'mailto:contato@afinanceira.com.br';
   };
 
   const handleHoverSound = (sound: string, ref: React.RefObject<any>) => {
