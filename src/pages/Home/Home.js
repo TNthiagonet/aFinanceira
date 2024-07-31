@@ -26,6 +26,6 @@ const Home = () => {
             React.createElement(ButtonPadrao, { onClick: handleNavigateToAbout, soundSrc: menuOpenSound }, "Sobre n\u00F3s"),
             " "),
         React.createElement("div", { className: "animation-container" },
-            React.createElement(Lottie, { animationData: animationData, loop: true, autoplay: true, style: { width: '100%', height: 'auto' } }))));
+            React.createElement(Lottie, { animationData: animationData, loop: true, autoplay: true, style: { width: '120%', height: 'auto' } }))));
 };
 export default Home;
